@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print a pattern of stars</title>
+</head>
+<body>
+    <script>    
+    
+//     Print a pattern of stars
+// (i) *    (ii) *
+//     **        **
+//     ***       ***
+
+
+
+var star = "*";
+var newStar = star;
+
+for (let i = 0; i<3; i++) {   
+     document.write( newStar + "</br>")  
+     newStar +=star; 
+   }
+
+
+   //2ns pattern
+
+for (let i = 0; i < 3; i++) {
+    let line = ''; 
+
+    for (let j = 0; j < 3 - i - 1; j++) {
+        line += ' ';
+    }
+
+    for (let j = 0; j <= i; j++) {
+        line += '*';
+    }
+
+    console.log(line + '<br>'); 
+}
+
+</script>
+</body>
+</html>

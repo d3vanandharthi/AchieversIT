@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count how many numbers are positive or negative in a given array.</title>
+</head>
+<body>
+    <script>    
+    
+
+    //Count how many numbers are positive or negative in a given array.
+
+    var arr = [1,0,-1,3];
+
+var posCount=0;
+var negCount = 0;
+
+for (let i = 0; i < arr.length-1; i++) {
+
+    let element = arr[i];
+ 
+    if(element > 0 && element !=0 ){
+        posCount++;
+    }else{
+        negCount++;
+    }
+}
+
+document.write("Positive Count : "+ posCount +"</br>")
+document.write("Negative Count : "+ negCount +"</br>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if a given string reads the same backward as forward(Palindrome).</title>
+</head>
+<body>
+    <script>    
+    
+    var arr=[1,2,3,4,3,2,1];
+
+for(var i = 0, j = arr.length-1; i<=arr.length-1; i++ ,j--){
+
+    if(i==j){
+        document.write('Palindrome')
+    }
+    if(arr[i]!=arr[j])
+       {
+        document.write('Not Palindrome')
+        break;
+       }
+}
+
+</script>
+</body>
+</html>
